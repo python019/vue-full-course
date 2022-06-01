@@ -9,11 +9,13 @@
 <body>
     
     <div id="app">
-        <br>Hammaga salom
-        <br>Kursga hush kelibsiz
-        <br>Kurs asoschisi: {{ familiyasi }} {{ ism }}
+        
+        <h1 v-if="qiymat">Malumot</h1>
 
-        <button v-on:click="IsmOzgartirish">Ozgartirish</button>
+    <div>
+        <button v-if="qiymat" v-on:click="qiymatniOzgartirish">Yashirish</button>
+        <button v-else v-on:click="qiymatniOzgartirish">Ko'rsatish</button>
+    </div>
     </div>
     
     
