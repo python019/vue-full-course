@@ -5,7 +5,18 @@ const app =  Vue.createApp({
             ism: 'Ubaydullo',
             familiya: 'Jumayev',
             son: 0,
-            qiymat: true
+            qiymat: true,
+            dasturlar: [
+                { nomi: "JS", asoschisi: 'Brendan Eich '},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
+                { nomi: "JS", asoschisi: 'Sun Microsystems'}
+            ]
           }
     },
     methods: {

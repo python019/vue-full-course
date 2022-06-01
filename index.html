@@ -11,6 +11,11 @@
     <div id="app">
         
         <h1 v-if="qiymat">Malumot</h1>
+        <ul>
+            <li v-for="dastur in dasturlar">
+                <h3>Dasturlash tili: {{ dastur.nomi }} Asoschisi: {{ dastur.asoschisi }}</h3>
+            </li>
+        </ul>
 
     <div>
         <button v-if="qiymat" v-on:click="qiymatniOzgartirish">Yashirish</button>
