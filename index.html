@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .qizil {
+            color: brown;
+        }
+    </style>
 </head>
 <body>
     
     <div id="app">
         
         <h1 v-if="qiymat">Malumot</h1>
+
         <ul>
             <li v-for="dastur in dasturlar">
-                <h3>Dasturlash tili: {{ dastur.nomi }} Asoschisi: {{ dastur.asoschisi }}</h3>
+                <h3 :class="{ qizil: dastur.dinamikClass }">Dasturlash tili: {{ dastur.nomi }} Asoschisi: {{ dastur.asoschisi }}</h3>
             </li>
         </ul>
+
+
         <img :src="rasm" alt="">
-        <a :href="link">Unsplash</a>
+        <br>
+        <h1>
+            <a :href="link">Unsplash</a>
+        </h1>
 
     <div>
         <button v-if="qiymat" v-on:click="qiymatniOzgartirish">Yashirish</button>
         <button v-else v-on:click="qiymatniOzgartirish">Ko'rsatish</button>
     </div>
     </div>
-    
     
     <script src="https://unpkg.com/vue@3"></script>
     <script src="application.js"></script>

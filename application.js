@@ -9,15 +9,9 @@ const app =  Vue.createApp({
             son: 0,
             qiymat: true,
             dasturlar: [
-                { nomi: "JS", asoschisi: 'Brendan Eich '},
-                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
-                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
-                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
-                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
-                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
-                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
-                { nomi: "Python", asoschisi: 'Gvido van Rossum'},
-                { nomi: "JS", asoschisi: 'Sun Microsystems'}
+                { nomi: "JS", asoschisi: 'Brendan Eich ', dinamikClass: true},
+                { nomi: "Python", asoschisi: 'Gvido van Rossum', dinamikClass: false},
+                { nomi: "Java", asoschisi: 'Sun Microsystems', dinamikClass: true}
             ]
           }
     },
