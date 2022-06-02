@@ -2,6 +2,8 @@ const app =  Vue.createApp({
     
     data() {
         return {
+            link: 'https://susysacademy.uz',
+            rasm: 'https://images.unsplash.com/photo-1654153845950-70eaf3ad3794?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
             ism: 'Ubaydullo',
             familiya: 'Jumayev',
             son: 0,
