@@ -1,21 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Asosiy</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <Navbar />
+  
 
   <h1 class="dizayn">{{ kalit }}</h1>
   <router-view/>
+
+
+  <Footer />
 </template>
 
 <script>
-
+import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
 
 export default ({
   data() {
     return {
       kalit: 'Bu yerda malumot bor'
     }
+  },
+  components: {
+    Navbar,
+    Footer
   }
 })
 </script>
@@ -29,19 +35,8 @@ export default ({
   text-align: center;
   color: #2c3e50;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 .dizayn {
   color: crimson;
 }
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+
 </style>
