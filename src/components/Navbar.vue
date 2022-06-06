@@ -1,5 +1,6 @@
 <template>
   <div class="navbar">
+    <h1>{{ sarlavha }}</h1>
     <nav>
       <router-link to="/">Asosiy</router-link> |
       <router-link to="/about">About</router-link>
@@ -9,6 +10,7 @@
 
 <script>
 export default {
+  props: ['sarlavha'],
   name: 'NavbarComponent',
 }
 </script>
