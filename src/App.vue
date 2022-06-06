@@ -4,7 +4,7 @@
 
   <h1 class="dizayn">{{ kalit }}</h1>
   <router-view/>
-
+  <h1>HomeView App</h1>
 
   <Footer />
 </template>
