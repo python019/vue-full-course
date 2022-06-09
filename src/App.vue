@@ -3,7 +3,8 @@
     <Navbar sarlavha="Ilk sarlavha" />
   </div>
   
-  <button @click="knopka">Ko'rsatish</button>
+  <button @click.right="knopka">Ko'rsatish</button>
+  <button @click.middle="knopka">middle</button>
 
   <h1 class="dizayn">{{ kalit }}</h1>
   <router-view/>
