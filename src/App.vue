@@ -1,6 +1,9 @@
 <template>
-  <Navbar sarlavha="Ilk sarlavha" />
+  <div v-if="namoyish">
+    <Navbar sarlavha="Ilk sarlavha" />
+  </div>
   
+  <button @click="knopka">Ko'rsatish</button>
 
   <h1 class="dizayn">{{ kalit }}</h1>
   <router-view/>
@@ -15,12 +18,18 @@ import Footer from './components/Footer.vue'
 export default ({
   data() {
     return {
-      kalit: 'Bu yerda malumot bor'
+      kalit: 'Bu yerda malumot bor',
+      namoyish: true
     }
   },
   components: {
     Navbar,
     Footer
+  },
+  methods: {
+    knopka() {
+      this.namoyish = !this.namoyish
+    }
   }
 })
 </script>
