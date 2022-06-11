@@ -3,7 +3,8 @@
     <h1>{{ sarlavha }}</h1>
     <nav>
       <router-link to="/">Asosiy</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link :to="{name: 'academy' }">Academy</router-link>
     </nav>
   </div>
 </template>
